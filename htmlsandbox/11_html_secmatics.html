@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div, span, id and class</title>
+    <style> 
+    .card {
+        border: 1px solid #ccc;
+        background: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    .enhance {
+        color: yellow;
+        background-color: black;
+    }
+    </style>
+</head>
+<body>
+    <header id = "main-header" class ="card">
+      <h1>My Website</h1>  
+      <p> A site about me</p>
+    </header>
+    <main id ="main-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href= "#">Contact</a></li>
+    </main>
+    <section id="about" class="card">
+        <h3> About</h3>
+        <p>Lorem ipsum dolor sit <span class= "enhance" >amet consectetur adipisicing elit. Suscipit  </span> asperiores expedita, eligendi hic porro temporibus a error deserunt vel sequi quisquam possimus nihil obcaecati perferendis atque quibusdam dolorem est voluptates!</p>
+    </section>
+    <aside id="contact"class="card">
+        <h3>Contact Me</h3>
+        <ul>
+            <li>Address Bikernakatte Mnagalore</li>
+            <li>Phone: 9900828249</li>
+            <li>Email: Grishmagrao@gmail.com</li>        
+        </ul>
+    </aside>
+    <footer id="footer" >
+        <p>Copywrite &copy 2020 </p>
+    </footer>
+
+    
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variable</title>
+    <style>
+        :root {
+            --max-width:1100px;
+            --primary-color: steelblue ;
+            --secondary-color: skyblue;
+            --light-color: #f4f4f4;
+           
+        }
+        .box {
+            --box-1-width:3rem;
+            --box-2-width: 1rem;
+
+        }
+        .box-1 { flex:  var(--box-width)}
+        .box-2 { flex: var(--box-2-width)}
+        * {
+            margin: 0;
+            padding:0;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4;
+          
+            background: var(--light-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            border-bottom: 5px var(--secondary-color);
+        color:#fff;
+        text-align: center;
+        }
+        .container {
+            display: flex;
+            margin:auto;
+            max-width: var (var(--max-width)) ;
+        }
+        .box {
+            background-color: var(--primary-color);
+            border-bottom: 5px var(--secondary-color);
+            color: #fff;
+            padding: 1rem;
+            margin:1rem;
+        }
+
+    </style>
+</head>
+<body>
+    <header> 
+    <h1>CSS Variable</h1>
+</header>
+<div class ="container">
+    <div class="box box-1">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, temporibus sunt sit dolores nisi dolor quasi nihil tenetur, veritatis odit quibusdam optio error magnam ipsum animi odio! Tempore officiis voluptates ut iusto. Odit sint tempora deleniti accusamus molestias, sapiente in.</p>
+    </div>
+    <div class="box box-2">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugiat adipisci quasi ratione hic cum impedit! Obcaecati aliquid adipisci quaerat!</p>
+    </div>
+</div>
+    
+</body>
+</html>
